@@ -14,6 +14,8 @@
 		2660B8FF29BB7F6700907E70 /* imagehandlerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2660B8FE29BB7F6700907E70 /* imagehandlerTests.swift */; };
 		2660B90929BB7F6700907E70 /* imagehandlerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2660B90829BB7F6700907E70 /* imagehandlerUITests.swift */; };
 		2660B90B29BB7F6700907E70 /* imagehandlerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2660B90A29BB7F6700907E70 /* imagehandlerUITestsLaunchTests.swift */; };
+		26BDDFE029BCD9720006C6B6 /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BDDFDF29BCD9720006C6B6 /* ImagePickerView.swift */; };
+		26BDDFE229BCD9AB0006C6B6 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BDDFE129BCD9AB0006C6B6 /* Coordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		2660B90429BB7F6700907E70 /* imagehandlerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = imagehandlerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2660B90829BB7F6700907E70 /* imagehandlerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imagehandlerUITests.swift; sourceTree = "<group>"; };
 		2660B90A29BB7F6700907E70 /* imagehandlerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imagehandlerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		26BDDFDF29BCD9720006C6B6 /* ImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerView.swift; sourceTree = "<group>"; };
+		26BDDFE129BCD9AB0006C6B6 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +102,8 @@
 				2660B8EF29BB7F6600907E70 /* ContentView.swift */,
 				2660B8F129BB7F6700907E70 /* Assets.xcassets */,
 				2660B8F329BB7F6700907E70 /* Preview Content */,
+				26BDDFDF29BCD9720006C6B6 /* ImagePickerView.swift */,
+				26BDDFE129BCD9AB0006C6B6 /* Coordinator.swift */,
 			);
 			path = imagehandler;
 			sourceTree = "<group>";
@@ -257,7 +263,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26BDDFE229BCD9AB0006C6B6 /* Coordinator.swift in Sources */,
 				2660B8F029BB7F6600907E70 /* ContentView.swift in Sources */,
+				26BDDFE029BCD9720006C6B6 /* ImagePickerView.swift in Sources */,
 				2660B8EE29BB7F6600907E70 /* imagehandlerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -419,6 +427,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"imagehandler/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Permission to access camera?";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -447,6 +456,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"imagehandler/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Permission to access camera?";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
