@@ -40,8 +40,16 @@ struct ContentView: View {
                     self.sourceType = .photoLibrary
                     self.isImagePickerDisplay.toggle()
                 }.padding()
+                
+                NavigationLink(destination: ImagePickerView(selectedImage: self.$selectedImage, sourceType:  self.sourceType)) {
+                 Text("Choose photo")
+                }
+                
             }
-            .navigationBarTitle("Demo")
+            .navigationTitle("Demo")
+            .toolbar() {
+                Button("Add"){}
+            }
             .sheet(isPresented: self.$isImagePickerDisplay) {
                 ImagePickerView(selectedImage: self.$selectedImage, sourceType: self.sourceType)
             }
